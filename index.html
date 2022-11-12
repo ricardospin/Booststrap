@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gulliver Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+         
+          <a class="navbar-brand" href="#"
+            ><img
+              style="max-width: 161px"
+              src="./assets/images/logo.png"
+              alt="Logo - Projeto"
+              srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex d-none d-lg-block">
+            <button
+              style="
+                background-color: #f5f5f5;
+                border-color: #553596;
+                color: #553596;
+              "
+              class="btn"
+              type="submit"
+            >
+              Cadastre-se
+            </button>
+            <button
+              style="background-color: #553596; border: #553596; color: #ffffff"
+              class="btn"
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        
+          <div class="d-lg-none">
+            <button
+              style="
+                background-color: #f5f5f5;
+                border-color: #553596;
+                color: #553596;
+              "
+              class="btn"
+              type="submit"
+            >
+              Cadastre-se
+            </button>
+            <button
+              style="background-color: #553596; border: #553596; color: #ffffff"
+              class="btn"
+              type="submit"
+            >
+              Login
+            </button>
+        </div>
+
+        </div>
+      </nav>
+      <nav class="d-none d-lg-block navbar navbar-expand-lg">
+        <div
+          class="collapse navbar-collapse container"
+          id="menu"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-carro.png" 
+                alt="Ícone - Carro"
+              />
+              <a class="nav-link" href="#">Aluguel de Carros</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-aviao.png" 
+                alt="Ícone - Avião"
+              />
+              <a class="nav-link" href="#">Voos</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-hotel.png" 
+                alt="Ícone - Hotel"
+              />
+              <a class="nav-link" href="#">Hospedagem</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-atracao.png" 
+                alt="Ícone - Atração"
+              />
+              <a class="nav-link" href="#">Atrações</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="slider-banner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container p-0">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/banner.jpg"
+              class="d-block mx-auto"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <form class="container" style="outline: 1px solid #9d9d9d" id="search">
+        <fieldset class="row">
+
+
+          <div class="col-lg-4 p-0 col-12">
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-cama.png"
+                alt="Ícone - Hotel"
+              />
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="Para onde você vai?"
+            />
+          </div>
+
+
+          <div class="col-lg-3 p-0 col-6">
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-calendario.png" 
+                alt="Ícone - Calendário"
+              />
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="Check-in · Check-out"
+            />
+          </div>
+
+
+          <div class="col-lg-3 p-0 col-6">
+            <li class="nav-item d-flex align-items-center">
+              <img
+                class="icons"
+                src="/assets/images/icone-usuario.png" 
+                alt="Ícone - Usuário"
+              />
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="2 adultos · 0 crianças"
+            />
+          </div>
+
+          
+
+          <div class="position-relative col-lg-2" id="searchInbanner">
+            <div class="submit">
+              <button
+                style="
+                  background-color: #f5f5f5;
+                  border-color: #3b34ad;
+                  color: #3b34ad;
+                "
+                type="submit"
+                class="btn btn-outline-primary"
+              >
+                Pesquisar
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <div id="promocoes">
+        <div class="container">
+          <h3
+            style="
+              color: #553596;
+              padding-top: 50px;
+              padding-bottom: 15px;
+              letter-spacing: -1px;
+            "
+          >
+            Promoções para sua viagem
+          </h3>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <img
+                src="./assets/images/ivete.png"
+                class="img-fluid"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-3 d-none d-lg-block">
+              <img
+                src="./assets/images/viagens.png"
+                class="img-fluid"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-3  d-none d-lg-block">
+              <img
+                src="./assets/images/banner3.png"
+                class="img-fluid"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 style="color: #553596; padding-top: 60px; letter-spacing: -1px">
+          Hotéis em promoção
+        </h3>
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREN61GNwrH3b8a12c3bgObilxc_t4E7fwfi3uP-qlBv7a5JE6v32JRcqsaJ5FHvvwH0ec&usqp=CAU"
+                class="card-img-top img-fluid"
+                alt="Ibis Styles São Paulo Anhembi"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ibis Styles São Paulo Anhembi</h5>
+                <p class="card-text">
+                  O Ibis Styles São Paulo Anhembi está localizado no bairro
+                  de...
+                </p>
+                <h5 class="card-title">R$ 850,00 - por noite</h5>
+
+                <div class="avaliacao-box">
+                  <span class="star"></span><span class="star"></span
+                  ><span class="star"></span><span class="star"></span
+                  ><span class="star"></span>
+                </div>
+
+                <a
+                  href="https://all.accor.com/hotel/B5N9/index.pt.shtml?dateIn=&nights=&compositions=1&stayplus=false&snu=false#origin=ibis"
+                  style="
+                    background-color: #553596;
+                    border: #553596;
+                    color: #ffffff;
+                  "
+                  class="btn"
+                  >Ver Hotel</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/202264542.jpg?k=7e7af2d1a779f0feb23b4512d4e8bb510db2e6d27354dcc25f3d37e5917e26cf&o=&hp=1"
+                class="card-img-top img-fluid"
+                alt="Comfort Ibirapuera"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Comfort Ibirapuera</h5>
+                <p class="card-text">
+                  Localizado em Moema, uma das melhores regiões de São Paulo, em
+                  frente a Moema do Metro e...
+                </p>
+                <h5 class="card-title">R$ 850,00 - por noite</h5>
+
+                <div class="avaliacao-box">
+                  <span class="star"></span><span class="star"></span
+                  ><span class="star"></span><span class="star"></span
+                  ><span class="star"></span>
+                </div>
+
+                <a
+                  href="https://www.reserveatlantica.com.br/hotel/comfort-ibirapuera"
+                  style="
+                    background-color: #553596;
+                    border: #553596;
+                    color: #ffffff;
+                  "
+                  class="btn"
+                  >Ver Hotel</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://ak-d.tripcdn.com/images/220s1g000001hmyzl7D6A_Z_1100_824_R5_Q70_D.jpg"
+                class="card-img-top img-fluid"
+                alt="Mercure São Paulo Pamplona Hotel"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mercure São Paulo Pamplona Hotel</h5>
+                <p class="card-text">
+                  Com uma localização ideal no bairro badalado de Jardins...
+                </p>
+                <h5 class="card-title">R$ 850,00 - por noite</h5>
+
+                <div class="avaliacao-box">
+                  <span class="star"></span><span class="star"></span
+                  ><span class="star"></span><span class="star"></span
+                  ><span class="star"></span>
+                </div>
+
+                <a
+                  href="https://all.accor.com/ssr/app/mercure/hotels/sao-paulo-state-of-sao-paulo-brazil/index.pt.shtml?compositions=1&stayplus=false&snu=false&accessibleRooms=false&utm_term=mar&gclid=Cj0KCQjwkOqZBhDNARIsAACsbfL9tPX-qTWC8o1WpzR9AxwqM1IEWt2p5u_XdiosKYMN-YXtXYFmoVwaAuL7EALw_wcB&utm_campaign=ppc-mer-mar-goo-br-pt-dom_top-mix-se&utm_medium=cpc&utm_source=google&utm_content=br-pt-BR-V7066"
+                  style="
+                    background-color: #553596;
+                    border: #553596;
+                    color: #ffffff;
+                  "
+                  class="btn"
+                  >Ver Hotel</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://www.imosp.com.br/wp-content/uploads/2020/04/Sheraton-Sa%CC%83o-Paulo-WTC-Hotel-2.jpg"
+                class="card-img-top img-fluid"
+                alt="Sheraton São Paulo WTC Hotel"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sheraton São Paulo WTC Hotel</h5>
+                <p class="card-text">
+                  Inaugurado em 1995, o Sheraton São Paulo WTC Hotel já...
+                </p>
+                <h5 class="card-title">R$ 850,00 - por noite</h5>
+
+                <div class="avaliacao-box">
+                  <span class="star"></span><span class="star"></span
+                  ><span class="star"></span><span class="star"></span
+                  ><span class="star"></span>
+                </div>
+
+                <a
+                  href="https://www.booking.com/Share-Yzn70d"
+                  style="
+                    background-color: #553596;
+                    border: #553596;
+                    color: #ffffff;
+                  "
+                  class="btn"
+                  >Ver Hotel</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 150px">
+        <div style="max-width: 450px" class="mx-auto">
+          <h3 class="row d-flex justify-content-center">Newsletter</h3>
+          <p
+            class="card-text row d-flex justify-content-center"
+            style="padding-bottom: 15px"
+          >
+            Fique por dentro das novidades
+          </p>
+          <form class="container">
+            <fieldset class="d-inline-flex">
+              <input
+                type="text"
+                style="background-color: #d9d9d9; height: 37px; width: 373px;"
+                id="EmailCliente"
+                class="form-control mr-5"
+                placeholder="Seu e-mail"
+              />
+              <input
+                style="
+                  background-color: #f5f5f5;
+                  border-color: #3b34ad;
+                  color: #3b34ad;
+                "
+                type="submit"
+                class="btn"
+                value="Enviar"
+              />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="position-relative">
+        <div class="col p-0 position-absolute bottom-10 end-0"></div>
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-4 col-12">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="padding-bottom: 15px; padding-top: 100px"
+              >
+                Guilliver Travel
+              </h5>
+              <p class="card-text">Sobre nós</p>
+              <p class="card-text">Sala de Imprensa</p>
+              <p class="card-text">Trabalhe Conosco</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="padding-bottom: 15px; padding-top: 100px"
+              >
+                Televendas
+              </h5>
+              <p class="card-text">0800 049 8790</p>
+              <p class="card-text">Segunda a sexta: 09h às 21h</p>
+              <p class="card-text">Sábado: 09h às 21h</p>
+              <p class="card-text">Domingos e feriados: 10h às 16h20</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="padding-bottom: 15px; padding-top: 100px"
+              >
+                Outras informações
+              </h5>
+              <p class="card-text">Condições de uso do site</p>
+              <p class="card-text">Condições Gerais</p>
+              <p class="card-text">Politica de privacidade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
